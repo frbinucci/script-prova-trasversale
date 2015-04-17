@@ -9,6 +9,7 @@ ciclo=0
 #Ciclo per le sottodirectory
 for i in $cartelle
 do
+	i=${i:0:${#i}-1}
 	#La variabile "primaRiga" viene portata a 1 per segnalare che la prima linea non è stata copiata
 	primaRiga=1
 	#Ciclo di lettura del file "export.csv"
